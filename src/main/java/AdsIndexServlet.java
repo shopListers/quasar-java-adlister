@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet(name = "AdsIndexServlet", urlPatterns = "/ads")
@@ -12,7 +13,12 @@ public class AdsIndexServlet extends HttpServlet {
 
         Ads adsDao = DaoFactory.getAdsDao();
 
-        List<Ad> currentAds = adsDao.all();
+        List<Ad> currentAds = null;
+        try {
+            currentAds = adsDao.all();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         request.setAttribute("allAds", currentAds);
         request.getRequestDispatcher("/ads/index.jsp").forward(request, response);
