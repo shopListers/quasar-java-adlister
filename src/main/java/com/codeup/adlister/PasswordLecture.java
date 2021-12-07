@@ -7,6 +7,7 @@ public class PasswordLecture {
 
     public static void main(String[] args) {
         String password = "fido";
+        String password = "fido2";
         String hash = BCrypt.hashpw(password, BCrypt.gensalt());
 
         System.out.println(password);
