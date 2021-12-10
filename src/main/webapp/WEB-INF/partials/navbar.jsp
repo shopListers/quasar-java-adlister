@@ -8,6 +8,8 @@
             <li><a href="/login">Login</a></li>
             <li><a href="/logout">Logout</a></li>
             <li><a href="/register">Create Lister</a> </li>
+            <li><a href="/profile">View Profile</a></li>
+
         </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
