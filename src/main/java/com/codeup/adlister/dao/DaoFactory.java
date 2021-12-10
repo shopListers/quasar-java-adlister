@@ -1,24 +1,21 @@
-import java.sql.SQLException;
+package com.codeup.adlister.dao;
 
 public class DaoFactory {
     private static Ads adsDao;
-    private static Quotes quotesDao;
+    private static Users usersDao;
+    private static Config config = new Config();
 
     public static Ads getAdsDao() {
         if (adsDao == null) {
-            adsDao = new ListAdsDao();
+            adsDao = new MySQLAdsDao(config);
         }
         return adsDao;
     }
 
-    public static Ads getAdsDao()  {
-        try{
-            if (quotesDao == null){
-                quotesDao = new MySQLQuotesDAO();
-            }}
-        catch (SQLException e){
-            e.printStackTrace();
+    public static Users getUsersDao() {
+        if (usersDao == null) {
+            usersDao = new MySQLUsersDao(config);
         }
-        return AdsDao;
+        return usersDao;
     }
 }
