@@ -3,8 +3,13 @@ package com.codeup.adlister.dao;
 import com.codeup.adlister.Config;
 import com.codeup.adlister.models.User;
 import com.mysql.cj.jdbc.Driver;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import java.sql.*;
+import com.mysql.cj.jdbc.Driver;
 
 public class MySQLUsersDao implements Users {
 	private Connection connection;
@@ -12,15 +17,16 @@ public class MySQLUsersDao implements Users {
 	public MySQLUsersDao(Config config) {
 		try {
 			DriverManager.registerDriver(new Driver());
-			connection = DriverManager.getConnection(
+			this.connection = DriverManager.getConnection(
 					config.getUrl(),
 					config.getUser(),
 					config.getPassword()
 			);
-		} catch (SQLException e) {
-			throw new RuntimeException("Error connecting to the database!", e);
+		} catch (SQLException throwables) {
+			throwables.printStackTrace();
 		}
 	}
+
 
 
 	@Override
