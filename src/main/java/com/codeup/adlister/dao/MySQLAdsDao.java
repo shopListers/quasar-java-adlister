@@ -1,7 +1,9 @@
 package com.codeup.adlister.dao;
+
+import com.codeup.adlister.Config;
 import com.codeup.adlister.models.Ad;
 import com.mysql.cj.jdbc.Driver;
-import javax.servlet.jsp.jstl.core.Config;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MySQLAdsDao implements Ads {
-	private Connection connection = null;
+	private Connection connection;
 
 	public MySQLAdsDao(Config config) {
 		try {

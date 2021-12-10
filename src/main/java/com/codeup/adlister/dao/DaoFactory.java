@@ -1,6 +1,9 @@
 package com.codeup.adlister.dao;
 
 
+import com.codeup.adlister.Config;
+
+
 public class DaoFactory {
     private static Ads adsDao;
     private static Users usersDao;
@@ -23,6 +26,7 @@ public class DaoFactory {
 
 import javax.servlet.jsp.jstl.core.Config;
 
+
 public class DaoFactory {
     private static Ads adsDao;
     private static Users usersDao;
@@ -41,6 +45,8 @@ public class DaoFactory {
 		}
 		return usersDao;
 	}
+
+
 }
 
     public static Users getUsersDao() {
@@ -49,4 +55,5 @@ public class DaoFactory {
         }
         return usersDao;
     }
+
 }
