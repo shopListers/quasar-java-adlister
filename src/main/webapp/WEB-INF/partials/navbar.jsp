@@ -14,3 +14,23 @@
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
+<%--<div>--%>
+<%--    <label for="myInput"></label>--%>
+<%--    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Coffee by Name">--%>
+<%--</div>--%>
+
+
+<%--function myFunction() {--%>
+<%--var input, filter, i;--%>
+<%--var newCoffee = [];--%>
+<%--input = document.getElementById("myInput")--%>
+<%--filter = input.value.toUpperCase();--%>
+<%--// for (i = 0; i < coffees.length; i++) {--%>
+<%--coffees.forEach(function(coffee) {--%>
+<%--if (coffee.name.toUpperCase().includes(filter.toUpperCase())) {--%>
+<%--newCoffee.push(coffee)--%>
+<%--console.log(newCoffee)--%>
+<%--tbody.innerHTML = renderCoffees(newCoffee);--%>
+<%--}})--%>
+<%--}--%>
