@@ -26,20 +26,36 @@
 
     <dependencies>
         <dependency>
+<<<<<<< HEAD
+=======
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
+
+        <dependency>
+>>>>>>> 3770696f641a980ddd7e32d96cd13ad6c72cbd6a
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
+            <version>4.0.1</version>
         </dependency>
+
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+<<<<<<< HEAD
             <version>8.0.23</version>
+=======
+            <version>8.0.25</version>
+>>>>>>> 3770696f641a980ddd7e32d96cd13ad6c72cbd6a
         </dependency>
+
     </dependencies>
 
 </project>
