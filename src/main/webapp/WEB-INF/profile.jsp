@@ -12,7 +12,10 @@
     <h1>Welcome, ${sessionScope.user.username}!</h1>
 </div>
 
-//////////////////////////////////////ADD Button!!!!!!!!!!!!!!!!!!!
+<a href="/editProfile">
+    <input type="button" value="Edit profile" />
+</a>
+
 
 
 </body>
