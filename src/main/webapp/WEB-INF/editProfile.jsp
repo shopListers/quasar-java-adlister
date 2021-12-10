@@ -12,8 +12,6 @@
     <h1>Welcome, ${sessionScope.user.username}!</h1>
 </div>
 
-//////////////////////////////////////ADD Button!!!!!!!!!!!!!!!!!!!
-
 
 </body>
 </html>
