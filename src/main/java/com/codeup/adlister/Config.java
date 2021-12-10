@@ -7,7 +7,6 @@ package com.codeup.adlister;
 			return "jdbc:mysql://localhost:3306/adlister_db";
 
 
-
 		}
 
 		public String getUser() {

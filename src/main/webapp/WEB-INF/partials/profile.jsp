@@ -13,6 +13,13 @@
     <h1>Welcome, ${sessionScope.user.username}!</h1>
 </div>
 
+<<<<<<< HEAD:src/main/webapp/WEB-INF/partials/profile.jsp
+=======
+<a href="/editProfile">
+    <input type="button" value="Edit profile" />
+</a>
+
+>>>>>>> e1fbdfc1549a9e3de7861173a5458fb05edd82ee:src/main/webapp/WEB-INF/profile.jsp
 
 
 </body>
