@@ -12,6 +12,7 @@
             <li><a href="/profile">View Profile</a> </li>
 
         </ul>
+
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

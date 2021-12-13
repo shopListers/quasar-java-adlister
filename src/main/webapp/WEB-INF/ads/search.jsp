@@ -3,22 +3,22 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Viewing All The Listings" />
+        <jsp:param name="title" value="Viewing All Searched Items" />
     </jsp:include>
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-<div class="container">
-    <div>
-    <form method="POST" action="/ads/search">
-        <label name="searchTerm" for="myInput"></label>
-        <input name="searchTerm" type="text" id="myInput" placeholder="Search for an Ad">
-        <button>Search</button>
-    </form>
-    </div>
+<%--<div>--%>
+<%--    <label for="myInput"></label>--%>
+<%--    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for an Ad">--%>
+<%--    <li><a href="/ads/search">Search</a></li>--%>
+<%--</div>--%>
+<%--<button>Search</button>--%>
 
-    <h1>Here Are all the Listings</h1>
+
+<div class="container">
+    <h1>Here Are all the Listings From Your Search</h1>
 
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
@@ -26,8 +26,9 @@
             <p>${ad.description}</p>
         </div>
     </c:forEach>
-
 </div>
+
+
 
 </body>
 </html>
