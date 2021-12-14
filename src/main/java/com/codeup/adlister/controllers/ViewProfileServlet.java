@@ -15,9 +15,12 @@ public class ViewProfileServlet extends HttpServlet {
             return;
         }
         request.getRequestDispatcher("/WEB-INF/profile.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/editProfile.jsp").forward(request, response);
+
+
     }
 
-//    figuring out how to do multiple doGets
+
 
 }
 
