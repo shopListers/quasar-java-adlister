@@ -1,12 +1,11 @@
 package com.codeup.adlister.models;
 
-public class User {
-	private long id;
-	private String username;
-	private String email;
-	private String password;
+import java.sql.Date;
 
-	public User() {}
+public class User {
+	private String username, email, password, nickname, food, birthday, address;
+	private long id;
+
 
 	public User(String username, String email, String password) {
 		this.username = username;
@@ -19,6 +18,47 @@ public class User {
 		this.username = username;
 		this.email = email;
 		this.password = password;
+	}
+
+
+	public User(String nickname, String food, String birthday, String address, long id) {
+		this.nickname = nickname;
+		this.food = food;
+		this.birthday = birthday;
+		this.address = address;
+		this.id = id;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
+	public String getFood() {
+		return food;
+	}
+
+	public void setFood(String food) {
+		this.food = food;
+	}
+
+	public String getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public long getId() {
