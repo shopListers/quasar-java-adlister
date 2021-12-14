@@ -13,7 +13,7 @@ import java.io.IOException;
 
 
 @WebServlet(name = "controllers.EditProfileServlet", urlPatterns = "/editProfile")
-public class EditProfileServlet extends HttpServlet {
+public class EditProfileServlet<user> extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		if (request.getSession().getAttribute("user") == null) {
 			response.sendRedirect("/login");
@@ -21,16 +21,5 @@ public class EditProfileServlet extends HttpServlet {
 		}
 		request.getRequestDispatcher("/WEB-INF/editProfile.jsp").forward(request, response);
 	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		String nickname = request.getParameter("nickname");
-		String food = request.getParameter("food");
-		String birthday = request.getParameter("birthday");
-		String address = request.getParameter("address");
-	}
-
-
-	User user = new User(nickname, food, birthday, address);
-        MySQLUsersDao.insert(user);
-        response.sendRedirect("/profile");
 }
+
