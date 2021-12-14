@@ -21,45 +21,51 @@ public class User {
 	}
 
 
-	public User(String nickname, String food, String birthday, String address, long id) {
-		this.nickname = nickname;
-		this.food = food;
-		this.birthday = birthday;
-		this.address = address;
-		this.id = id;
-	}
-
-	public String getNickname() {
-		return nickname;
-	}
-
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
-	}
-
-	public String getFood() {
-		return food;
-	}
-
-	public void setFood(String food) {
-		this.food = food;
-	}
-
-	public String getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
+//	public User(long id, String username, String email, String password, String nickname, String food, String birthday, String address, long id) {
+//		this.id = id;
+//		this.username = username;
+//		this.email = email;
+//		this.password = password;
+//		this.nickname = nickname;
+//		this.food = food;
+//		this.birthday = birthday;
+//		this.address = address;
+//		this.id = id;
+//	}
+//
+//
+//
+//	public String getNickname() {
+//		return nickname;
+//	}
+//
+//	public void setNickname(String nickname) {
+//		this.nickname = nickname;
+//	}
+//
+//	public String getFood() {
+//		return food;
+//	}
+//
+//	public void setFood(String food) {
+//		this.food = food;
+//	}
+//
+//	public String getBirthday() {
+//		return birthday;
+//	}
+//
+//	public void setBirthday(String birthday) {
+//		this.birthday = birthday;
+//	}
+//
+//	public String getAddress() {
+//		return address;
+//	}
+//
+//	public void setAddress(String address) {
+//		this.address = address;
+//	}
 
 	public long getId() {
 		return id;
