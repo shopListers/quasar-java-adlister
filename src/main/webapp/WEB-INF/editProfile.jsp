@@ -16,26 +16,19 @@
             <div class="form-group">
                 <label for="title">What would you like us to call you?</label>
                 <input id="title" name="name" class="form-control" type="text">
+<%--                <% request.setAttribute("title",title);%>--%>
             </div>
             <div class="form-group">
                 <label for="description">What is your favorite kind of food?</label>
                 <textarea id="description" name="typeFood" class="form-control" type="text"></textarea>
             </div>
             <div class="form-group">
-                <label for="description">What is your birthday? (mm/dd/yr)</label>
+                <label for="description">What is your birthday? (mm/dd/year)</label>
                 <textarea id="birthday" name="bday" class="form-control" type="text"></textarea>
             </div>
             <div class="form-group">
                 <label for="description">Where are you currently living?</label>
                 <textarea id="location" name="location" class="form-control" type="text"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="description">Please enter your Social Security Number.</label>
-                <textarea id="ssn" name="ssn" class="form-control" type="text"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="description">Please enter your credit card information with the wacky numbers on the back.</label>
-                <textarea id="credit" name="credit" class="form-control" type="text"></textarea>
             </div>
             <input type="submit" class="btn btn-block btn-primary">
         </form>
