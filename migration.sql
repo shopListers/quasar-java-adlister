@@ -9,10 +9,6 @@ CREATE TABLE users (
     username VARCHAR(240) NOT NULL UNIQUE,
     email VARCHAR(240) NOT NULL,
     password VARCHAR(255) NOT NULL,
-    nickname VARCHAR(255)  NULL,
-    food VARCHAR(255)  NULL,
-    birthday DATE NULL,
-    address VARCHAR(255)  NULL,
     PRIMARY KEY (id)
 );
 
