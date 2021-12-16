@@ -36,6 +36,7 @@
 //        DaoFactory.getUsersDao.insert(profileEdit)
 //        response.sendRedirect("/profile");
 
+
 //		User profile = new User(
 //				request.getParameter("nickname"),
 //				request.getParameter("food"),
@@ -46,3 +47,4 @@
 //		response.sendRedirect("/profile");
 //	}
 //}
+
